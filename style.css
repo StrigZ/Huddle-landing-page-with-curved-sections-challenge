@@ -148,28 +148,35 @@ section {
 .hero__bottom {
     width: 70%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .hero__bottom-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .hero__bottom-item {
     margin-bottom: 0;
     padding: 0 1rem;
+    max-width: 250px;
 }
 
-.hero__bottom-img {}
+.hero__bottom-img {
+    display: block;
+    margin-right: auto;
+}
 
 .hero__bottom-title {
     font-size: clamp(3rem, 10vw, 5rem);
-    font-family: 'Poppins', sans-serif;
     font-weight: var(--fw700);
 }
 
 .hero__bottom-desc {
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: var(--fw400);
     opacity: .5;
 }
